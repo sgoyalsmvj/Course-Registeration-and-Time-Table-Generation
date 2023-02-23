@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="ISD.css">
+    <title>Homepage</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="con">
+            <header>
+              <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Logo-LNMIIT.svg/799px-Logo-LNMIIT.svg.png?20110427094856" alt="">
+              </div>
+              <div>
+                <h3>
+                  THE LNM INSTITUTE OF INFORMATION TECHNOLOGY
+                </h3>
+                <h5>
+                  "EXCELLENCE OUR MOTTO DISCIPLINE OUR WAY"
+                </h5>
+              </div>
+            </header>
+          </div>
+        <div class="con detailsbody">
+            <div class="profile">
+                <div>
+                    <img src="https://thumbs.dreamstime.com/z/admin-sign-laptop-icon-stock-vector-166205404.jpg" alt="">
+                </div>
+                <div class="profileinfo">
+                    <h3><%=admin.name%></h3>
+                    <p>User Name</p>
+                    <p>Designated Post</p>
+                </div>
+                
+            </div>
+            <div class="semesterdetails">
+                <h3>Current Semester</h3>
+                <p>From Jan To Feb</p>
+                <p>Course Registeration on</p>
+            </div>
+        </div>
+        <div class="con">
+            <div class="pannel">
+                <button type="button" class="btn btn-info"> <a href="/setSlots">Start Course Registeration</a></button>
+                <form action="/getTable" method="POST" class="ttable">
+                  <input type="text" name="sem" placeholder="Enter Sem">
+                  <input type="text" name="branch" placeholder="Enter Branch">
+                <button type="submit" class="btn btn-info"> Time Table</button> 
+
+                </form>
+            <button type="button" class="btn btn-info"> <a href="/viewadminfeed">View Feedback</a> </button>
+            <button type="button" class="btn btn-info"> <a href="/courseRegisterationadmin">Course Registeration Compeletion</a> </button>
+            <button type="button" class="btn btn-info"> <a href="/logout">Logout</a> </button> 
+
+            </div>
+                       
+        </div>
+    </div>
+</body>
+</html>

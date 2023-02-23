@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="ISD.css">
+    <title>Homepage</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="con">
+            <header>
+              <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Logo-LNMIIT.svg/799px-Logo-LNMIIT.svg.png?20110427094856" alt="">
+              </div>
+              <div>
+                <h3>
+                  THE LNM INSTITUTE OF INFORMATION TECHNOLOGY
+                </h3>
+                <h5>
+                  "EXCELLENCE OUR MOTTO DISCIPLINE OUR WAY"
+                </h5>
+              </div>
+            </header>
+          </div>
+          <div class="con">
+            <div class="pannel">
+              <button type="button" class="btn btn-info"> <a href="/Homepagestudent">Home</a></button>
+              <button type="button" class="btn btn-info"> <a href="/logout">Logout</a></button>
+              <button type="button" class="btn btn-info"> <a href="/registeredCourses">Registered Courses</a> </button>
+            </div>
+                       
+        </div>
+        <div class="feedback">
+            <h3> <span>Feedback for Time Table</span> </h3>
+            <form action="/submitfeedback" method="POST">
+              <input type="text" name="from" value="<%=student.username%>" hidden>
+              <input type="text" name="to" value="admin" hidden>
+                <div>
+                  <label for="customRange2" class="form-label">Rate Overall</label>
+                  <input name="rate" type="range" class="form-range" min="0" max="5" id="customRange2">
+                
+                </div>
+                <div>
+                  <label class="form-label">Comments</label>
+                  <textarea name="comment" id="" cols="30" rows="10"></textarea>
+    
+                </div>
+            <button type="submit" class="btn btn-info">Submit</button> 
+
+            </form>
+            
+               
+        </div>
+    </div>
+</body>
+</html>
